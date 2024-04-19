@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CRUD System</title>
+</head>
+<body>
+    <div class="container mt-3">
+        <div class="row text-center text-white"><h2>CRUD Operators</h2></div>
+        <div class="row ">
+            <div class="col-md-9 mx-auto col-xs-12">
+                <form >
+                    <div class="box my-2">
+                        <label for="name">Product Name:</label>
+                        <input type="text" id="name" name="name" required  class="form-control" placeholder="Enter Product Name">
+                    </div>
+                    <div class="box my-2">
+                        <label for="category">Category Name:</label>
+                        <input type="text" id="category" name="category"  required class="form-control" placeholder="Enter Category Of Product">
+                    </div>
+                    <div class="box my-2">
+                        <label for="price">Price:</label>
+                        <input type="text" id="price" name="price"  required class="form-control" placeholder="Enter Product Price">
+                    </div>
+                    <div class="box my-2">
+                        <label for="description">Description:</label>
+                        <textarea id="description"  name="description"   required class="form-control" placeholder="Enter simple Product Description" rows="3"></textarea>
+                    </div>
+                    <div class="box my-2" id="btns">
+                       <button class="btn btn-success " type="button" id="add" onclick="addProduct()">Add</button>
+                      <!--  <button class="btn btn-info d-none" id="updata">Updata</button> -->
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-10 mx-auto maintable">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Product Categoty</th>
+                            <th>Product Price</th>
+                            <th>Product Description</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody"> </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

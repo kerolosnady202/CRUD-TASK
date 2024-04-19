@@ -1,0 +1,33 @@
+:root{
+    --main-color:green
+}
+body{
+/*     background-image: linear-gradient(to right, #fffbd5, #b20a2c);
+ */    background-image: radial-gradient(#062446, #9198e5);
+}
+form label{
+    color: white;
+    margin-bottom: 7px;
+    margin-left: 5px;
+}
+table {
+    width: 100%
+}
+table thead{
+   color: white;
+}
+table tr{
+    border-bottom:1px solid #b9adad;
+    text-align: center;
+    padding: 20px 0px !important;
+    height: 55px;
+    align-items: center;
+}
+.main-text{
+    color: var(--main-color);
+}
+@media (max-width:767px) {
+    .maintable{
+        overflow-x: auto;
+    }
+}
